@@ -34,6 +34,11 @@
 <link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon">
 <link href="ico/favicon.png" rel="shortcut icon">
 
+<!--AUTO SLIDE JS-->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 <!-- CSS FILES -->
 <link rel="stylesheet" href="css/animate.min.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -214,14 +219,18 @@
     <!-- end swiper-pagination -->
     <div class="swiper-fraction"></div>
     <!-- end swiper-fraction --> 
+    <!-- Navigation buttons -->
+    <div class="swiper-pagination">
+      <button class="swiper-button-prev"><i class="fa fa-arrow-left"></i></button>
+      <button class="swiper-button-next"><i class="fa fa-arrow-right"></i></button>
+    </div>      
   </div>
-  <script type="text/javascript">
-    var swiper = new Swiper('.swiper-slider', {
-      loop: true,
-      autoplay: {
-        delay: 5000,
-      },
-    });
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+var swiper = new Swiper(".swiper-slider", {
+  autoplay: true,
+  autoplayDelay: 5000,
+});
   </script>
   
   <!-- end swiper-slider --> 
